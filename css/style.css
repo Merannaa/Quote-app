@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #eff0f4;
+}
+.Content{
+    /* position: relative; */
+    height: 100vh;
+}
+.Content .drop{
+    /* position: relative; */
+    text-align: center;
+    width: 770px;
+    height: 700px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.1),
+    25px 35px 20px rgba(0, 0, 0, 0.1), 
+    25px 30px 30px rgba(0, 0, 0, 0.1),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+    transition: 0.5s;
+}
+.Content .drop:hover{
+    border-radius: 50%;
+
+}
+h1{
+    
+    font-size: 68px;
+    font-family: 'Permanent Marker', cursive;f;
+    margin-bottom: 80px;
+    margin-top: 90px;
+    color: #4056F4;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px #4056F4;
+}
+p{
+    font-size: 30px;
+    font-family: 'Rowdies', sans-serif;
+}
+span{
+    font-size: 20px;
+    font-family: 'Rowdies', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+.btn{
+    font-family: 'Rowdies', sans-serif;
+    font-size: 20px;
+}
+button{
+    width: 250px;
+    height: 80px;
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 0.9), 
+    15px 15px 10px rgba(0, 0, 0, 0.1),
+    15px 10px 15px rgba(255, 255, 255, 0.9);
+    background-color: transparent;
+    letter-spacing: 1px;
+    transition: all 1s;
+    border: none;
+    position: relative;
+    transition-delay: .8s;
+}
+button:hover{
+    color: #4056F4;
+    letter-spacing: 4px;
+    text-shadow: 0 0 3px #4056F4;
+    transition-delay: 1ms;
+    background-color: #CEBBC9;
+}
+button span{
+    position: absolute;
+    display: block;
+    background-color: #4056F4;
+    box-shadow:0 0 3px #4056F4 ;
+}
+button span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: transform .5s;
+}
+button:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+button span:nth-child(2){
+    right:0;
+    top: 0;
+    width: 50.5%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform .5s;
+}
+button:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+button span:nth-child(3){
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaley(0);
+    transform-origin:bottom;
+    transition: transform .5s;
+    transition-delay: 0.4s;
+}
+button:hover span:nth-child(3){
+    transform: scaley(1);
+    transform-origin: top;
+}
+button span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaley(0);
+    transform-origin:top;
+    transition: transform .5s;
+    transition-delay: 0.4s;
+}
+button:hover span:nth-child(4){
+    transform: scaley(1);
+    transform-origin: top;
+}
+button span:nth-child(5){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform .5s;
+    transition-delay: 0.8s;
+}
+button:hover span:nth-child(5){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+button span:nth-child(6){
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: transform .5s;
+    transition-delay: 0.8s;
+}
+button:hover span:nth-child(6){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -50px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    width: 35px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    width: 60px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    width: 25px;
+    animation-delay: 3.5s;
+}
+.bubbles img:nth-child(6){
+    width: 70px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+}
+
+@media screen and (max-width: 600px) 
+{
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-size:20px;
+    }
+    button{
+        width: 150px;
+    }
+    .drop{
+        max-width:max-content;
+    }
+    span{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 766px) and (min-width: 600px){
+    h1{
+        font-size: 55px;
+    }
+    .drop{
+        max-width:max-content;
+    }
+    span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 767px){
+    .drop{
+        max-width:700;
+    }
+    span{
+        font-size: 22px;
+    }
+}
