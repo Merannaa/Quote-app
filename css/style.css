@@ -11,6 +11,8 @@ body{
 .Content{
     /* position: relative; */
     height: 100vh;
+    background-image: url(../img/bg1.PNG);
+    background-size: cover;
 }
 .Content .drop{
     /* position: relative; */

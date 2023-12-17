@@ -23,6 +23,7 @@ var quotes = [
 
 var quoteId = document.getElementById('randomQuote')
 var authorId = document.getElementById('randomName')
+
 var prev = null
 
 
